@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Capstone.App/1.0.0": {
+        "dependencies": {
+          "Capstone.Core": "1.0.0"
+        },
+        "runtime": {
+          "Capstone.App.dll": {}
+        }
+      },
+      "Capstone.Core/1.0.0": {
+        "dependencies": {
+          "SharpQuest.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "Capstone.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SharpQuest.Contracts/1.0.0": {
+        "runtime": {
+          "SharpQuest.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Capstone.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Capstone.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpQuest.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

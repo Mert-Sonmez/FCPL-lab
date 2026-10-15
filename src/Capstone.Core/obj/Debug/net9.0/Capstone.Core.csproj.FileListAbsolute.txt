@@ -1,0 +1,31 @@
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/Capstone.Core.deps.json
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/Capstone.Core.dll
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/Capstone.Core.pdb
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/SharpQuest.Contracts.dll
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/SharpQuest.Contracts.pdb
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.csproj.AssemblyReference.cache
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.AssemblyInfoInputs.cache
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.AssemblyInfo.cs
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.csproj.CoreCompileInputs.cache
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.43E9D204.Up2Date
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.dll
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/refint/Capstone.Core.dll
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.pdb
+/Users/mert/Desktop/FCPL/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/ref/Capstone.Core.dll
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/Capstone.Core.deps.json
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/Capstone.Core.dll
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/Capstone.Core.pdb
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/SharpQuest.Contracts.dll
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/bin/Debug/net9.0/SharpQuest.Contracts.pdb
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.csproj.AssemblyReference.cache
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.AssemblyInfoInputs.cache
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.AssemblyInfo.cs
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.csproj.CoreCompileInputs.cache
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.43E9D204.Up2Date
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.dll
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/refint/Capstone.Core.dll
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.pdb
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/ref/Capstone.Core.dll
+/Users/mert/Desktop/ITDepartment/3rd year/FCPL/FCPL-Lab/FCPL-lab-main/src/Capstone.Core/obj/Debug/net9.0/Capstone.Core.sourcelink.json
