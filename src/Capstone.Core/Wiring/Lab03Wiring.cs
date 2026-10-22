@@ -9,7 +9,7 @@ public class Lab03Wiring : ILab03Wiring
 {
     public IItemStore CreateStore() => new CourseStore();
     
-    public IItem CreateSample(int seed) => new Course 
+    public IItem CreateSample(int seed) => new MandatoryCourse
     { 
         Id = $"cs-{seed}", 
         DisplayName = $"Course {seed}",

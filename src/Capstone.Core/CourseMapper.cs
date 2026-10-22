@@ -3,7 +3,7 @@ using System.Text.Json;
 using SharpQuest.Contracts;
 
 namespace Capstone.Core;
-
+//the mapper to create the correct course type from JSON
 public class CourseMapper : IItemMapper
 {
     public string ToJson(IItem item)
@@ -40,15 +40,27 @@ public class CourseMapper : IItemMapper
 
             if (Enum.TryParse<Assessment>(dto.AssessmentType, true, out var assessment))
             {
-                return new Course
+                if (assessment == Assessment.Exam)
                 {
-                    Id = dto.Id,
-                    DisplayName = dto.DisplayName,
-                    Credits = dto.Credits.Value,
-                    AssessmentType = assessment
-                };
+                    return new MandatoryCourse
+                    {
+                        Id = dto.Id,
+                        DisplayName = dto.DisplayName,
+                        Credits = dto.Credits.Value,
+                        AssessmentType = assessment
+                    };
+                }
+                else
+                {
+                    return new ElectiveCourse
+                    {
+                        Id = dto.Id,
+                        DisplayName = dto.DisplayName,
+                        Credits = dto.Credits.Value,
+                        AssessmentType = assessment
+                    };
+                }
             }
-
             return null;
         }
         catch

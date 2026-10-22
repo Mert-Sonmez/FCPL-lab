@@ -7,7 +7,7 @@ public class Lab02Wiring : ILab02Wiring
 {
     public IItemStore CreateStore() => new CourseStore();
     public IItemMapper CreateMapper() => new CourseMapper();
-    public IItem CreateSample(int seed) => new Course 
+    public IItem CreateSample(int seed) => new MandatoryCourse
     { 
         Id = $"cs-{seed}", 
         DisplayName = $"Course {seed}",

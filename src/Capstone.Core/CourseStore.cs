@@ -9,7 +9,6 @@ public class CourseStore : IItemStore
 {
     private readonly List<Course> _items = new();
 
-    // İşte eksik olan parça burası! İçerideki listenin eleman sayısını döndürüyor.
     public int Count => _items.Count;
 
     public void Add(IItem item)
