@@ -45,4 +45,3 @@ public class RecentlyUsed<T> : IEnumerable<T>
   IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }
 
-//I created a generic class with 'T' to store the newest items

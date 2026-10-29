@@ -5,8 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Capstone.Core;
-
-//I add IEnumerable<IItem> interface
 public class CourseStore : IItemStore, IEnumerable<IItem>
 {
     private readonly List<Course> _items = new();
@@ -24,7 +22,6 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
     {
         return _items.FirstOrDefault(i => i.Id == id);
     }
-
     public IReadOnlyList<IItem> All()
     {
         return _items.ToList();
@@ -47,7 +44,7 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
     {
         return GetEnumerator();
     }
-
+    
     public IItem this[int index]
     {
         get { return _items[index]; } 
@@ -68,4 +65,3 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
         }
     }
 }
-//I added an iterator using 'yield return', indexers to find courses by ID or number, and a lazy search method
