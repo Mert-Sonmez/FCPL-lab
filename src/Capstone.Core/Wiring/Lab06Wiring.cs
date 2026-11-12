@@ -10,7 +10,7 @@ public class Lab06Wiring : ILab06Wiring
     public IItem CreateSample(int seed) => new MandatoryCourse { Id = seed.ToString(), DisplayName = "A", Credits = 3, AssessmentType = Assessment.Exam };
     public IReadOnlyList<IItem> Where(IItemStore store, Func<IItem, bool> keep)
     {
-        if (keep is null) throw new ArgumentNullException(nameof(keep)); // Check Null
+        if (keep is null) throw new ArgumentNullException(nameof(keep));
 
         var kept = new List<IItem>();
         foreach (var item in ((CourseStore)store))
@@ -33,11 +33,9 @@ public class Lab06Wiring : ILab06Wiring
         }
         return mapped;
     }
-    //I check if the function is null first, to prevent crashes
     public void ForEach(IItemStore store, Action<IItem> action)
     {
         if (action is null) throw new ArgumentNullException(nameof(action)); 
-
         foreach (var item in ((CourseStore)store))
         {
             action(item);
@@ -46,8 +44,8 @@ public class Lab06Wiring : ILab06Wiring
     public Action Subscribe(IItemStore store, Action<IItem> handler)
     {
         var myStore = (CourseStore)store;
-        myStore.ItemAdded += handler; // start listening to the event
+        myStore.ItemAdded += handler; 
         
-        return () => myStore.ItemAdded -= handler; // returns a function to stop listening
+        return () => myStore.ItemAdded -= handler; 
     }
 }

@@ -8,7 +8,6 @@ namespace Capstone.Core;
 public class CourseStore : IItemStore, IEnumerable<IItem>
 {
     private readonly List<Course> _items = new();
-    //This event tells other classes when a new item is added
     public event Action<IItem>? ItemAdded;
     public event EventHandler<ItemChangeEventArgs>? ItemAddedWithDetails;
     public int Count => _items.Count;
@@ -20,12 +19,13 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
             throw new ArgumentException("Id already exists");
 
         _items.Add((Course)item);
-    //I trigger the event safely using Invoke after adding a new course
+    
         ItemAdded?.Invoke(item);
 
-        ItemAddedWithDetails?.Invoke(this, new ItemChangeEventArgs(item, DateTime.Now));
+        ItemAddedWithDetails?.Invoke(this, new ItemChangeEventArgs(item, DateTime.Now)); // second event
     }
-    
+    public record ItemChangeEventArgs(IItem Item, DateTime Time);
+
     public IItem? FindById(string id)
     {
         return _items.FirstOrDefault(i => i.Id == id);
@@ -73,4 +73,3 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
         }
     }
 }
-public record ItemChangeEventArgs(IItem Item, DateTime Time);
