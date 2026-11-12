@@ -74,3 +74,9 @@ The full rules are in the [course contract](https://github.com/x86bogdan/fcpl-20
 
 - **Zero nullable warnings.** In this repository, a nullable warning is a build error. `#nullable disable` compiles, but it gets flagged to your instructor.
 - **.NET 9 and C# 13, on every machine.** The lab PCs have .NET 9; a .NET 10 SDK builds the same thing. Newer C# features are rejected by the build even on a .NET 10 laptop, so what builds on yours also builds on a lab PC and on GitHub. Details: [.NET 9 or .NET 10](https://github.com/x86bogdan/fcpl-2026/blob/main/DOTNET-9.md).
+
+
+### Lab 07 - Required Feature
+1. **Which classes changed:** I updated `CourseStore.cs` and added `ItemQueries.cs`.
+2. **What they do:** They use LINQ to answer real questions (like total credits, hard courses, and sorting names) without loops.
+3. **Where to see it working:** You can see the 5 real queries at the bottom of my `CourseStore.cs` file.
