@@ -19,7 +19,6 @@ public class Lab07Wiring : ILab07Wiring
     public IReadOnlyList<IItem> Sorted(IEnumerable<IItem> items)
     {
         if (items is null) throw new ArgumentNullException(nameof(items));
-
         return items
             .OrderBy(i => i.DisplayName, StringComparer.OrdinalIgnoreCase)
             .ThenBy(i => i.Id, StringComparer.Ordinal)

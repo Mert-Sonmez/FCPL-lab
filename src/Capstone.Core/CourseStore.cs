@@ -72,4 +72,14 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
             }
         }
     }
+    public IEnumerable<IItem> GetHardCourses() 
+        => _items.Where(c => c.Credits > 3);
+    public IEnumerable<string> GetSortedCourseNames() 
+        => _items.OrderBy(c => c.DisplayName).Select(c => c.DisplayName);
+    public int GetTotalCredits() 
+        => _items.Sum(c => c.Credits);
+    public IEnumerable<IItem> GetTop3HardestCourses() 
+        => _items.OrderByDescending(c => c.Credits).Take(3);
+    public IEnumerable<IItem> GetCoursesWithLongestNames(int count) 
+        => _items.Longest(count);
 }
