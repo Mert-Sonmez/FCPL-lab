@@ -80,3 +80,8 @@ The full rules are in the [course contract](https://github.com/x86bogdan/fcpl-20
 1. **Which classes changed:** I updated `CourseStore.cs` and added `ItemQueries.cs`.
 2. **What they do:** They use LINQ to answer real questions (like total credits, hard courses, and sorting names) without loops.
 3. **Where to see it working:** You can see the 5 real queries at the bottom of my `CourseStore.cs` file.
+
+### Lab 08 - Required Feature
+1. **Which classes changed:** I added `CourseStorage.cs` and `Lab08Wiring.cs`.
+2. **What they do:** They save and load all course types and fields asynchronously using JSON and a DTO row.
+3. **Where to see it working:** You can see `SaveAsync` and `LoadAsync` in `src/Capstone.Core/CourseStorage.cs`.
