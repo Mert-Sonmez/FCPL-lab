@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Capstone.Core;
 public class CourseStore : IItemStore, IEnumerable<IItem>
@@ -82,4 +83,22 @@ public class CourseStore : IItemStore, IEnumerable<IItem>
         => _items.OrderByDescending(c => c.Credits).Take(3);
     public IEnumerable<IItem> GetCoursesWithLongestNames(int count) 
         => _items.Longest(count);
+    public bool CanTake(string courseId, IEnumerable<string> passedCourseIds)
+    {
+        var course = _items.FirstOrDefault(c => c.Id == courseId);
+        if (course is null) return false;
+
+        var passed = passedCourseIds.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        return course.Prerequisites.All(p => passed.Contains(p));
+    }
+    public IEnumerable<Course> GetAvailableCourses(IEnumerable<string> passedCourseIds)
+    {
+        var passed = passedCourseIds.ToHashSet(StringComparer.OrdinalIgnoreCase);
+        return _items.Where(c => !passed.Contains(c.Id) && c.Prerequisites.All(p => passed.Contains(p)));
+    }
+    public int GetCreditsForSemester(int year, int term)
+        => _items.Where(c => c.Semester.Year == year && c.Semester.Term == term).Sum(c => c.Credits);
+
+    public Task SaveAsync(string path) => CourseStorage.SaveAsync(this, path);
+    public static Task<CourseStore> LoadAsync(string path) => CourseStorage.LoadAsync(path);    
 }
