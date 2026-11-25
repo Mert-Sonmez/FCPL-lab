@@ -85,3 +85,8 @@ The full rules are in the [course contract](https://github.com/x86bogdan/fcpl-20
 1. **Which classes changed:** I added `CourseStorage.cs` and `Lab08Wiring.cs`.
 2. **What they do:** They save and load all course types and fields asynchronously using JSON and a DTO row.
 3. **Where to see it working:** You can see `SaveAsync` and `LoadAsync` in `src/Capstone.Core/CourseStorage.cs`.
+
+### Lab 09 - Required Feature
+1. **Which classes changed:** I added `CatalogueViewModel.cs`, `RelayCommand.cs` (with `AsyncRelayCommand`), `Lab09Wiring.cs`, and the `Capstone.Ui` Avalonia project (`MainWindow.axaml`, `App.axaml.cs`).
+2. **What they do:** They bind the course list, search filter, semester filter, prerequisites details panel, add/delete actions, and async save to an Avalonia window using MVVM.
+3. **Where to see it working:** Run `dotnet run --project src/Capstone.Ui` to open the window, and check `src/Capstone.Core/ViewModels/CatalogueViewModel.cs` for the view model logic.
